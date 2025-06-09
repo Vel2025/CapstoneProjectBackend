@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 import trialRoutes from './routes/trials.mjs';
 import authRoutes from './routes/auth.mjs';
 import mongoose from 'mongoose';
+
+
 dotenv.config();
 
 const app = express();
