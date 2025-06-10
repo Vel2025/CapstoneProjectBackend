@@ -3,12 +3,16 @@ import dotenv from 'dotenv';
 import trialRoutes from './routes/trials.mjs';
 import authRoutes from './routes/auth.mjs';
 import mongoose from 'mongoose';
-
+import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
 
+app.use(cors({
+  origin: 'http://localhost:5173', 
+  credentials: true, 
+}));
 app.use (express.json());
 
 mongoose.connect(process.env.MONGODB_URI)
