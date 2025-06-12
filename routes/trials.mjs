@@ -55,8 +55,8 @@ router.delete('/:id', authMiddleware, async (req, res) => {
     if (!trial || trial.userId.toString() !== req.user.id) {
       return res.status(404).json({ message: 'Trial not found' });
     }
-    await trial.remove();
-    res.json({ message: 'Trial deleted' });
+    await trial.deleteOne();
+    res.status(200).json({ message: 'Trial deleted' });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
   }
