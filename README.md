@@ -26,3 +26,9 @@ This is a full-stack MERN application for managing clinical trials. It allows au
 - Axios for API calls
 - JWT for authentication
 - Mongoose for MongoDB interaction
+
+## Acknowledement
+- Per Scholas, Instructors
+- ActivateWork, All Staff members
+- 2025-den-01 
+- Family and Friends
